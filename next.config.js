@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  output: 'export',
+  // Only use static export in production builds, not in dev server
+  output: process.env.NODE_ENV === 'production' ? 'export' : undefined,
   basePath: '/RAILWAY',
   assetPrefix: '/RAILWAY/',
   typescript: {
