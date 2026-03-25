@@ -385,9 +385,3 @@ export default function BookingPage() {
     </div>
   );
 }
-
-// Required for static export with dynamic routes
-export async function generateStaticParams() {
-  // Return empty array - actual IDs are loaded dynamically from URL params
-  return [];
-}
