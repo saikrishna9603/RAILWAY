@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  output: 'export',
+  basePath: '/RAILWAY',
+  assetPrefix: '/RAILWAY/',
   typescript: {
     tsconfigPath: './tsconfig.json',
   },
