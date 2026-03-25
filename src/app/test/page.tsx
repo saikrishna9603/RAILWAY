@@ -10,7 +10,7 @@ export default function TestPage() {
       try {
         // Test 1: Check if backend is reachable
         console.log('Testing backend connection...');
-        const response = await fetch('http://localhost:8001/', {
+        const response = await fetch('http://localhost:10000/', {
           method: 'GET',
           headers: { 'Accept': 'application/json' },
         });

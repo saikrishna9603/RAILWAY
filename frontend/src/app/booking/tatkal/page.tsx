@@ -43,7 +43,7 @@ export default function TatkalBookingPage() {
     setLoading(true);
 
     try {
-      const response = await fetch("http://localhost:8001/api/bookings/tatkal", {
+      const response = await fetch("http://localhost:10000/api/bookings/tatkal", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

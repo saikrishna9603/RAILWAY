@@ -50,7 +50,7 @@ export default function TrainSearchPage() {
 
     try {
       const response = await fetch(
-        `http://localhost:8001/api/trains/search?from_station=${fromStation}&to_station=${toStation}&departure_date=${departureDate}&seat_class=${seatClass}&page=${page}&limit=${pageSize}&sort_by=${sortBy}`
+        `http://localhost:10000/api/trains/search?from_station=${fromStation}&to_station=${toStation}&departure_date=${departureDate}&seat_class=${seatClass}&page=${page}&limit=${pageSize}&sort_by=${sortBy}`
       );
 
       const data = await response.json();

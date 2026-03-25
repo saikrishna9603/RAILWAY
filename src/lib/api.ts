@@ -5,7 +5,7 @@
 
 // Use backend host from env if provided, otherwise point to the local development server.
 const BACKEND_ENV_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
-const API_URL = BACKEND_ENV_URL ? BACKEND_ENV_URL.replace(/\/+$/, '') : 'http://localhost:8000';
+const API_URL = BACKEND_ENV_URL ? BACKEND_ENV_URL.replace(/\/+$/, '') : 'http://localhost:10000';
 
 export function getApiUrl(endpoint: string): string {
   // Remove leading slash from endpoint if present

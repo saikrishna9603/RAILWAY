@@ -57,7 +57,7 @@ export default function DashboardPage() {
   const fetchDashboardData = async (userId: string) => {
     try {
       // Fetch profile
-      const profileResponse = await fetch(`http://localhost:8001/api/profile/${userId}`);
+      const profileResponse = await fetch(`http://localhost:10000/api/profile/${userId}`);
       if (profileResponse.ok) {
         const profileData = await profileResponse.json();
         setStats({
@@ -70,7 +70,7 @@ export default function DashboardPage() {
 
       // Fetch booking history
       const bookingsResponse = await fetch(
-        `http://localhost:8001/api/bookings/history/${userId}`
+        `http://localhost:10000/api/bookings/history/${userId}`
       );
       if (bookingsResponse.ok) {
         const bookingsData = await bookingsResponse.json();
