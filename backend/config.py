@@ -17,6 +17,9 @@ ALLOWED_ORIGINS = [
     "http://localhost:3001",
     "http://localhost:8000",
     "http://127.0.0.1:3000",
+    "https://tatkal.vercel.app",  # Vercel frontend
+    "https://*.vercel.app",  # All Vercel preview deployments
+    "https://*.onrender.com",  # Render domains
 ]
 
 # Initialize FastAPI app
